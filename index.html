@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="shortcut icon" href="./src/images/calculadora.png">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="tgx_calculator">
+        <div class="tgx_calculator__wrapper">
+            <div class="tgx_calculator__container">
+                <div class="tgx_calculator__wrapper-result">
+                    <h3>Calculadora</h3>
+                    <span id="resultado"></span>
+                </div>
+
+                <div class="tgx_calculator__list-container">
+                    <div class="tgx_calculator__list">
+                        <div class="tgx_calculator__item tgx_calculator__item-clear">
+                            <input type="button" value="clear" class="tgx_calculator__link tgx_calculator__link-clear"
+                                id="clear" onclick="limpar()">
+                        </div>
+
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="<" onClick="voltar()" class="tgx_calculator__link" id="raiz">
+                        </div>
+
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="%" onClick="insert('%')" class="tgx_calculator__link" id="porcentagem">
+                        </div>
+
+                    </div>
+
+                    <div class="tgx_calculator__list">
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="7" onClick="insert('7')" class="tgx_calculator__link" id="num7">
+                        </div>
+
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="8" onClick="insert('8')" class="tgx_calculator__link" id="num8">
+                        </div>
+
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="9" onClick="insert('9')" class="tgx_calculator__link" id="num9">
+                        </div>
+
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="÷" onClick="insert('/')" class="tgx_calculator__link" id="divisao">
+                        </div>
+                    </div>
+
+                    <div class="tgx_calculator__list">
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="4" onClick="insert('4')" class="tgx_calculator__link" id="num4">
+                        </div>
+
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="5" onClick="insert('5')" class="tgx_calculator__link" id="num5">
+                        </div>
+
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="6" onClick="insert('6')" class="tgx_calculator__link" id="num6">
+                        </div>
+
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="X" onClick="insert('*')" class="tgx_calculator__link" id="multiplicacao">
+                        </div>
+                    </div>
+
+                    <div class="tgx_calculator__list">
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="1" onClick="insert('1')" class="tgx_calculator__link" id="num1">
+                        </div>
+
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="2" onClick="insert('2')" class="tgx_calculator__link" id="num2">
+                        </div>
+
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="3" onClick="insert('3')" class="tgx_calculator__link" id="3">
+                        </div>
+
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="+" onClick="insert('+')" class="tgx_calculator__link" id="adicao">
+                        </div>
+                    </div>
+
+                    <div class="tgx_calculator__list">
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="0" onClick="insert('0')" class="tgx_calculator__link" id="num0">
+                        </div>
+
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="." onClick="insert('.')" class="tgx_calculator__link" id="ponto">
+                        </div>
+
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="=" onClick="calcular()" class="tgx_calculator__link" id="igualdade">
+                        </div>
+
+                        <div class="tgx_calculator__item">
+                            <input type="button" value="-" onClick="insert('-')" class="tgx_calculator__link" id="subtracao">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tgx_calculator__footer">
+                <p>Tayná Goes</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./js/index.js"></script>
+
+</html>
